@@ -23,7 +23,7 @@ import GHC.Generics (Generic)
 import Math.Geometry.GridInternal
 
 data SquareDirection = North | East | South | West
-  deriving (Show, Eq, Ord, Enum)
+  deriving (Show, Eq, Ord, Enum, Bounded)
 
 -- | An unbounded grid with square tiles.
 --   The grid and its indexing scheme are illustrated in the user guide,
