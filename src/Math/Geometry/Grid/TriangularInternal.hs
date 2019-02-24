@@ -24,7 +24,7 @@ import Math.Geometry.GridInternal
 
 data TriDirection = South | Northwest | Northeast | 
                       North | Southeast | Southwest
-                        deriving (Show, Eq, Generic)
+                        deriving (Show, Eq, Generic, Ord, Enum)
 
 -- | An unbounded grid with triangular tiles.
 --   The grid and its indexing scheme are illustrated in the user guide,

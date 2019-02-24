@@ -24,7 +24,7 @@ import GHC.Generics (Generic)
 import Math.Geometry.GridInternal
 
 data HexDirection = West | Northwest | Northeast | East | Southeast | 
-                      Southwest deriving (Show, Eq, Generic)
+                      Southwest deriving (Show, Eq, Generic, Ord, Enum)
 
 -- | An unbounded grid with hexagonal tiles
 --   The grid and its indexing scheme are illustrated in the user guide,

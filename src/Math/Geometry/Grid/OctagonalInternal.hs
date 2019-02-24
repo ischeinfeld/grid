@@ -24,7 +24,7 @@ import Math.Geometry.GridInternal
 
 data OctDirection = West | Northwest | North | Northeast | East | 
                       Southeast | South | Southwest
-                        deriving (Show, Eq, Generic)
+                        deriving (Show, Eq, Generic, Ord, Enum)
 
 -- | An unbounded grid with octagonal tiles.
 --   The grid and its indexing scheme are illustrated in the user guide,
